@@ -27,12 +27,18 @@ overflow-x:hidden;
 background-color:#30415D;
 }
 
+/*.item {
+	max-height: 90vh;
+	max-width: 95vw;
+}*/
+
 .calendar-wrapper {
 position:relative;
 padding-bottom:56.25%;
 padding-top:30px;
 height:0;
 overflow:hidden;
+margin-bottom: 30px;
 }
 
 /*.calendar-wrapper iframe,.vresponsive-iframe-container object,.vresponsive-iframe-container embed {
@@ -198,9 +204,9 @@ h2 {
 	background-image: none !important;
 }
 
-#calendar-iframe {
+/*#calendar-iframe {
 	margin: 10px;
-}
+}*/
 
 @media screen and (max-width: 768px){
 	.about-image {
