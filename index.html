@@ -35,6 +35,17 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".intro">
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="wrap-it-all-up">
         <header class="intro intro-custom" style="height:250px;">
             <div class="intro-body">
@@ -100,7 +111,8 @@
                 <div class="col-sm-8 col-sm-offset-2 about-bubble" style="margin-bottom:20vh; border-radius:2px;padding:20px;">
                     <h2>Our Story</h2>
                     <img src="./media/images/owners.jpg" class="about-image">
-                    <br /><br /> I think it was in Barbados that I told Jane of my idea of starting my own business called,
+                    <br /><br /> 
+                    I think it was in Barbados that I told Jane of my idea of starting my own business called,
                     “Kevin Moore’s Adventure Vacations”. We had known each other a full week! Jane and I met while she was
                     an entertainer on the RCCL’s Sun Viking. I was what they called a Port Lecturer. In reality, I was a
                     diver and had just left Norwegian Cruise Lines to try my hand at this Port Lecturer. It paid a lot more,
@@ -122,6 +134,7 @@
                         Also, it should be noted, banks require collateral or experience or something I clearly didn’t have.
                         When I told Jane the plan she looked at me and said, “you’d be perfect at that and we should do it”.
                         Cool huh?
+
                         <p> Yeah, Jane who already had her degree (Computer Information Systems), daughter of a Naval Academy
                             Graduate, and a triplet. Man can she sing. We now had the entertainment for the beach lobster
                             cookouts! A lot more to the story – planes, trains, and visits all around the USA (from KY to
@@ -369,33 +382,38 @@
         <section id="calendar">
             <div style="width:100%;padding-top:75px;" id="reservations" class="calendar-wrapper responsiveCal">
                 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=admin%40jsab.net&amp;color=%23691426&amp;ctz=America%2FNew_York"
-                    style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" id="calendar-iframe"></iframe>
+                    style="border-width:0; margin: auto;" width="800" height="600" frameborder="0" scrolling="no" id="calendar-iframe"></iframe>
             </div>
 
             <div class="row" id="reservation-form">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
-                        <input type="text" class="form-control" placeholder="Name*" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
-                        <input type="email" class="form-control" placeholder="Email*" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
-                        <input type="tel" class="form-control" placeholder="Phone*" aria-describedby="basic-addon1" onchange="checkPhone(this)">
-                    </div>
-                    <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
-                        <textarea type="text" class="form-control" rows="10" placeholder="Comment (optional)"></textarea>
-                    </div>
-                    <button class="btn btn-primary pull-right">Send</button>
+                    <form>
+                        <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
+                            <input type="text" class="form-control" placeholder="Name*" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
+                            <input type="email" class="form-control" placeholder="Email*" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
+                            <input type="tel" class="form-control" placeholder="Phone*" aria-describedby="basic-addon1" onchange="checkPhone(this)">
+                        </div>
+                        <div class="input-group-lg" style="margin-left:auto;margin-right:auto;margin-bottom:10px;">
+                            <textarea type="text" class="form-control" rows="10" placeholder="Comment (optional)"></textarea>
+                        </div>
+                        <button class="btn btn-primary pull-right">Send</button>
+                    </form>
                 </div>
             </div>
         </section>
 
+        <div id="reviews">
+            <div class="fb-comments" data-href="https://www.facebook.com/sailingladyjane/" data-numposts="5" style="margin:auto;"></div>
+        </div>
 
-        <div style="width:200px;margin:auto;text-align:center;">
+        <div class="social-media-wrapper">
             <a href="http://www.instagram.com/sailingladyjane" target="_blank"><i class="fa fa-instagram social-media-icons" aria-hidden="true"></i></a>
             <a href="http://www.facebook.com/sailingladyjane" target="_blank"><i class="fa fa-facebook-square social-media-icons" aria-hidden="true"></i></a>
-            <a href="http://www.youtube.com/sailingladyjane" target="_blank"><i class="fa fa-youtube-square social-media-icons" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCb9Pwe5fEe8t2zoeOFy0fsQ" target="_blank"><i class="fa fa-youtube-square social-media-icons" aria-hidden="true"></i></a>
         </div>
 
         <!-- Footer -->
